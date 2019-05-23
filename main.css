@@ -1,0 +1,65 @@
+:root{
+	--color-primary:#55c57a;
+	--color-primary-light:#7ed56f;
+	--color-primary-dark:;
+
+	--color-secondary:;
+	--font-size: 1.6rem;
+	--color-grey:;
+}
+body{
+	background-color: var(--color-primary);
+	padding:0;
+	margin:; 
+	box-sizing:  ;
+}
+html{
+	font-size:62.5%;
+}
+
+.header{
+	position: relative;
+	height: ;
+
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.text-box{
+	position: absolute;
+	top: 40% ;
+	bottom: 50% ;
+	transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+.heading-primary-main{
+	font-size: 6rem;
+	letter-spacing: 2rem;
+	display: block;
+	animation-name: moveInleft;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+}
+
+.heading-primary-sub{
+	font-size: 2rem;
+	display: block;
+
+}
+
+@keyframes moveInleft{
+	0%{
+		opacity: 0;
+		transform: scale(.1);
+	}
+
+	100%{
+		opacity: 1;
+		transform: scale(2);
+	}
